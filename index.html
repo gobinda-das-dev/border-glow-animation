@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+   <main class="h-screen w-full grid place-items-center bg-black">
+      <div class="parent relative size-20 rounded-full cursor-pointer">
+         <span class="absolute block size-full rounded-full border border-white/20"></span>
+         <span class="absolute block size-full rounded-full border border-white mask-gradient opacity-0 [mask-image:linear-gradient(to_right,transparent_80%,black_100%)] will-change-transform" aria-hidden="true"></span>
+      </div>
+
+      <h1 class="text-white fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-20 opacity-50">Move your mouse near the circle to see the magic</h1>
+   </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>
