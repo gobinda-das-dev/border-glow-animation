@@ -16,7 +16,7 @@ parent.addEventListener('mouseleave', () => tw.reverse());
 
 
 
-const respectedBound = 200; // check for mouse movement around this value
+const respectedBound = 250; // check for mouse movement around this value
 const position = { x: 0, y: 0 };
 const size = { width: 0, height: 0 };
 const mouse = { x: 0, y: 0 };
