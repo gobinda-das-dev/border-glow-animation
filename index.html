@@ -14,7 +14,15 @@
    <main class="h-screen w-full grid place-items-center bg-black">
       <div class="parent relative size-20 rounded-full cursor-pointer">
          <span class="absolute block size-full rounded-full border border-white/20"></span>
-         <span class="absolute block size-full rounded-full border border-white mask-gradient opacity-0 [mask-image:linear-gradient(to_right,transparent_80%,black_100%)] will-change-transform" aria-hidden="true"></span>
+         <span class="absolute block size-full rounded-full border border-white mask-gradient opacity-a0 will-change-transform"
+          aria-hidden="true"
+          style="
+          --angle: 0rad;
+          --p1: 70%;
+          --p2: 100%;
+          mask-image: linear-gradient(var(--angle),transparent var(--p1),black var(--p2))
+          "
+          ></span>
       </div>
 
       <h1 class="text-white fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-20 opacity-50">Move your mouse near the circle to see the magic</h1>
